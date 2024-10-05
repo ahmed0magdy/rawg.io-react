@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# RAWG Game Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple game hub application built with React, TypeScript, and Vite that utilizes the RAWG API to fetch and display game data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse a list of games
+- Game details (to be implemented)
+- Responsive design
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: JavaScript library for building user interfaces
+- **TypeScript**: Typed superset of JavaScript
+- **Vite**: Fast build tool and development server
+- **Axios**: Promise-based HTTP client for making API requests
+- **React Router**: Declarative routing for React applications
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/rawg-game-hub.git
+   cd rawg-game-hub
+   ```
+
+2. npm install
+3. npm run dev
+   Open your browser and navigate to http://localhost:3000 (or the port indicated in your terminal).
+
+### Acknowledgments
+
+RAWG API for providing game data.
+Vite for fast development experience.
+
+Feel free to customize any sections to better fit your project or add more details as necessary!
