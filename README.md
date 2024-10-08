@@ -5,7 +5,7 @@ A simple game hub application built with React, TypeScript, and Vite that utiliz
 ## Features
 
 - Browse a list of games
-- Game details (to be implemented)
+- Game details
 - Responsive design
 
 ## Technologies Used
@@ -32,12 +32,16 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
    ```
 
 2. npm install
-3. npm run dev
+3. Get a RAWG API key at https://rawg.io/apidocs. You'll have to create an account first.
+4. Add the API key to src/services/api-client.ts
+5. npm run dev
    Open your browser and navigate to http://localhost:3000 (or the port indicated in your terminal).
 
 ### Acknowledgments
 
 RAWG API for providing game data.
 Vite for fast development experience.
+
+Mosh React 18 Course
 
 Feel free to customize any sections to better fit your project or add more details as necessary!
