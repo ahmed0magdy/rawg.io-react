@@ -21,7 +21,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
   if (error) return null;
   return (
     <>
-      <Heading fontSize="2xl" marginBottom={3}>
+      <Heading fontSize="2xl" marginBottom={3} marginTop={9}>
         Genres
       </Heading>
       <List>
@@ -40,7 +40,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
                 fontWeight={genre.id === selectedGenre?.id ? "bold" : "Normal"}
                 variant="link"
                 onClick={() => onSelectGenre(genre)}
-                fontSize="lg"
+                fontSize="md"
               >
                 {genre.name}
               </Button>
