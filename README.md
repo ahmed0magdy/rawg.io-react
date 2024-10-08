@@ -25,12 +25,6 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### Installation
 
 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/rawg-game-hub.git
-   cd rawg-game-hub
-   ```
-
 2. npm install
 3. Get a RAWG API key at https://rawg.io/apidocs. You'll have to create an account first.
 4. Add the API key to src/services/api-client.ts
@@ -43,5 +37,3 @@ RAWG API for providing game data.
 Vite for fast development experience.
 
 Mosh React 18 Course
-
-Feel free to customize any sections to better fit your project or add more details as necessary!
