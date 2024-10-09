@@ -1,7 +1,7 @@
 import { GameQuery } from "../App";
 import { useQuery } from "@tanstack/react-query";
 import { Platform } from "./usePlatforms";
-import APIClient from "../Services/api-client";
+import APIClient from "../services/api-client";
 
 export interface Game {
   id: number;
