@@ -12,8 +12,8 @@ import GameHeading from "./components/GameHeading";
 export interface GameQuery {
   genreId?: number;
   platformId?: number;
-  sortOrder: string;
-  searchText: string;
+  sortOrder?: string;
+  searchText?: string;
 }
 
 function App() {
@@ -25,9 +25,7 @@ function App() {
       templateColumns={{ base: "1fr", lg: "250px 1fr" }}
     >
       <GridItem area="nav">
-        <NavBar
-          onSearch={(searchText) => setGameQuery({ ...gameQuery, searchText })}
-        />
+        <NavBar onSearch={(searchText) => setGameQuery({ searchText })} />
       </GridItem>
       <Show above="lg">
         <GridItem area="aside" paddingX={5}>
