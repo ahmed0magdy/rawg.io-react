@@ -24,7 +24,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository
 2. npm install
 3. Get a RAWG API key at https://rawg.io/apidocs. You'll have to create an account first.
 4. Add the API key to src/services/api-client.ts
